@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random RPG Thing</title>
+</head>
+<body>
+  <h1>Random RPG Thing</h1>
+  <button id="itemButton">Get Random Item</button>
+  <div id="itemContainer"></div>
+
+  <script>
+    const itemButton = document.getElementById('itemButton');
+    const itemContainer = document.getElementById('itemContainer');
+    itemButton.addEventListener('click', (event) => {
+      console.log('click', event);
+    }, false);
+  </script>
+</body>
+</html>
