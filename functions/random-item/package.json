@@ -1,0 +1,20 @@
+{
+  "name": "random-item",
+  "version": "1.0.0",
+  "description": "Get a random item from an Airtable collection",
+  "main": "token-hider.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "netlify",
+    "serverless",
+    "apis",
+    "js"
+  ],
+  "author": "Netlify",
+  "license": "MIT",
+  "dependencies": {
+    "airtable": "^0.8.1"
+  }
+}
