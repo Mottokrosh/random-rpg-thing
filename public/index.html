@@ -4,25 +4,36 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Random RPG Thing</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,900');
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
 </head>
 <body>
-  <h1>Random RPG Thing</h1>
-  <button id="itemButton">Get Random Item</button>
-  <div id="itemContainer"></div>
+  <main>
+    <h1>Random RPG Thing</h1>
+    <button id="itemButton">Get Random Item</button>
+  </main>
 
   <script>
     const itemButton = document.getElementById('itemButton');
-    const itemContainer = document.getElementById('itemContainer');
+    const mainElement = document.querySelector('main');
+
     itemButton.addEventListener('click', (event) => {
       fetch('/.netlify/functions/random-item')
         .then(response => response.json())
         .then((item) => {
-          console.log(item);
+          const itemContainer = document.createElement('div');
+
           itemContainer.innerHTML = `
             <h2 class="name">${item.Name || 'No name yet'}</h2>
             <p class="description">${item.Description}</p>
             <p class="source"><a href="https://mottokrosh.com/${item['Source SKU'].toLowerCase()}">${item.Source}</a></p>
           `;
+
+          mainElement.append(itemContainer);
         })
       ;
     }, false);
