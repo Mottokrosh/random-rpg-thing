@@ -70,10 +70,13 @@
       font-size: 1.25rem;
       margin-top: 0;
     }
+    #itemButton {
+      margin-top: 1rem;
+    }
     #items {
       display: grid;
       grid-gap: 1rem;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
       margin-top: 2rem;
     }
     .item {
@@ -118,6 +121,7 @@
 <body>
   <main>
     <h1>Random RPG Thing</h1>
+    <p>Pertaining to random tables from <a href="https://mottokrosh.com/machinations/">Mottokrosh Machinations</a> publications. Suitable for science fantasy, and, with the odd reroll, other fantasy settings. Licenses of the source publications apply.</p>
     <button id="itemButton"><span>Get Random Item</span></button>
     <div id="items"></div>
     <footer>
