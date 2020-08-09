@@ -2,7 +2,7 @@
   "name": "random-item",
   "version": "1.0.0",
   "description": "Get a random item from an Airtable collection",
-  "main": "token-hider.js",
+  "main": "random-item.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
