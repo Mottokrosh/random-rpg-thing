@@ -1,0 +1,11 @@
+{
+  "name": "random-rpg-thing",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Small app to return a random RPG thing",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}
